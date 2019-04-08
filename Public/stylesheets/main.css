@@ -1,0 +1,180 @@
+
+html, body {
+	color: #3a3a3a;
+    font-family: "Open Sans",sans-serif;
+  	height: 100%;
+  	margin: 0;
+}
+
+#show-con {
+	width: 80%;
+}
+ 
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full {
+	padding: 9px;
+}
+
+#deleteForm {
+	display: inline;
+}
+
+.container .main-jumbo {
+	margin-top: -20px;
+	margin-bottom: -20px;
+	padding-left: 0;
+	background-color: #f9fbfc;
+}
+
+.caption h4{
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.navbar-default {
+    border-bottom: 1px solid #cccccc;
+    box-shadow: 0 1px 18px #e8e8e8;
+    z-index: 9999;
+}
+
+.list-inline li img{
+	margin-top: 13px;
+	width: 25px;
+}
+
+.list-inline li {
+	display: inline-block;
+}
+
+.list-inline li p {
+	font-size: 17px;
+}
+.foot {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.list0-group li {
+	list-style: none;
+}
+
+.lists li {
+	margin: 3px;
+}
+
+#myCarousel {
+	margin: 35px;
+}
+
+#news {
+	font-size: 25px;
+	font-weight: 800;
+	text-align: center;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+#featured {
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 0;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#searchtags {
+	border: none;
+    box-shadow: none;
+    width: 102%;
+    background-color: #f8f8f8;
+    padding-top: 17px;
+}
+
+.navbar-default .navbar-brand{
+	color: #3a3a3a;
+	margin: 5px 0 5px 15px;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.navbar-right {
+	color: #3a3a3a;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+#happy {
+	color: #3a3a3a;
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 0;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0
+}
+
+#ndtv img {
+	width: 67%;
+	margin: 10px;
+}
+
+#express img {
+	width: 67%;
+	margin: 10px;
+}
+
+#fwb img {
+	width: 67%;
+	margin: 10px;
+}
+
+.logo {
+	background-color: white;
+	border: 0;
+}
+
+#welcome {
+	color: #3a3a3a;
+    font-family: "Open Sans",sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    padding-bottom: 0;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+#stay {
+	color: #3a3a3a;
+    font-family: "Open Sans",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 0;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0
+}
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+hr{
+
+	margin: 30px;
+}
