@@ -4,7 +4,7 @@ var passport = require('passport');
 var User = require('../models/user');
 
 router.get("/", function(req, res){
-    res.render("landing");
+    res.redirect('/campgrounds');
 });
 
 
@@ -23,7 +23,7 @@ router.post('/register', function(req, res){
             return res.redirect('/register')
         }
         passport.authenticate('local')(req, res, function(){
-            req.flash('success', 'Welcome to HelpCamp');
+            req.flash('success', 'Welcome to Campperr');
             res.redirect('/campgrounds');
         })
     })

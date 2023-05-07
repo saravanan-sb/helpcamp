@@ -1,7 +1,7 @@
-# helpcamp
+# Campperr
 Help camp is a website which helps the user to view and book campsites.!
 
-#HelpCamp
+#Campperr
 
 ##Initial Setup
 * Add Landing Page
