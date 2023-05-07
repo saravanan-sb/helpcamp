@@ -14,14 +14,14 @@ let express     = require("express"),
     User        = require('./models/user'),
     flash       = require('connect-flash')
 
-
+require('dotenv').config()
 let middleware = require('./middleware');
 let commentRoutes = require('./routes/comments');
 let campgroundRoutes = require('./routes/campgrounds');
 let indexRoutes = require('./routes/index');
 
 //mongoose.connect('mongodb://localhost:27017/yelp_camp_v8', { useNewUrlParser: true });
-mongoose.connect('mongodb+srv://sender:<password>@nest.xopwc.mongodb.net/Campperr', {useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect(process.env.MONGOURI, {useNewUrlParser: true , useUnifiedTopology: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/Public'));
@@ -29,7 +29,7 @@ app.use(methodOverride('_method'));
 // seedDB();
 
 app.use(require('express-session')({
-    secret: 'I dnt know what is this',
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }));
@@ -62,7 +62,10 @@ app.post('/campgrounds/:id/book',middleware.isLoggedIn, function(req, res){
    })
 });
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT, (conn, err) => {
+    if (err) console.log(err);
+    else console.log('Connected to port', process.env.PORT)
+});
 
 
 
