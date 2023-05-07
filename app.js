@@ -1,4 +1,4 @@
-var express     = require("express"),
+let express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
     mongoose    = require("mongoose"),
@@ -15,19 +15,18 @@ var express     = require("express"),
     flash       = require('connect-flash')
 
 
-var middleware = require('./middleware');
-var commentRoutes = require('./routes/comments');
-var campgroundRoutes = require('./routes/campgrounds');
-var indexRoutes = require('./routes/index');
-
+let middleware = require('./middleware');
+let commentRoutes = require('./routes/comments');
+let campgroundRoutes = require('./routes/campgrounds');
+let indexRoutes = require('./routes/index');
 
 //mongoose.connect('mongodb://localhost:27017/yelp_camp_v8', { useNewUrlParser: true });
-mongoose.connect('mongodb+srv://saravanan:<password>@helpcamp-211la.mongodb.net/helpcamp?retryWrites=true', {useNewUrlParser: true });
+mongoose.connect('mongodb+srv://sender:<password>@nest.xopwc.mongodb.net/Campperr', {useNewUrlParser: true , useUnifiedTopology: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/Public'));
 app.use(methodOverride('_method'));
-/*seedDB();*/
+// seedDB();
 
 app.use(require('express-session')({
     secret: 'I dnt know what is this',
